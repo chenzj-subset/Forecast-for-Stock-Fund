@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import tushare as ts
 
@@ -13,7 +14,10 @@ listall = pro.stock_basic(exchange='', list_status='L',
 # Index(['ts_code', 'symbol', 'name', 'area', 'industry', 'list_date'], dtype='object')
 ts_code_list = list(set(listall.ts_code[0:99]))
 for ts_code in ts_code_list:
-    k = pro.daily(ts_code=ts_code,
+    k = pro.daily(ts_code='000001.SZ',
                   start_date='20200101', end_date='20200817')
-    # K lines
     print(k)
+    # K lines
+    # lstm to predict
+    os.system("lstm.py")
+    break
