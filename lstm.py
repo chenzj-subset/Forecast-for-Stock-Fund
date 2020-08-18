@@ -1,4 +1,6 @@
 # importing required libraries
+import tensorflow
+
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, LSTM

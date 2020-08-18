@@ -4,3 +4,7 @@ Step 0ne:
     get the stock or fund information from Tushare
 Step Two:
     use LSTM
+    environment
+        CentOS 7
+        Anaconda3-5.3.0-Linux-x86_64.sh
+
